@@ -27,4 +27,5 @@
     <!-- Default screen brightness setting.
          Must be in the range specified by minimum and maximum. -->
     <integer name="config_screenBrightnessSettingDefault">114</integer>
+    <string name="config_recentsComponentName" translatable="false">ch.deletescape.lawnchair.plah/com.android.quickstep.RecentsActivity</string>
 </resources>
