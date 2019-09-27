@@ -14,6 +14,8 @@
 # limitations under the License.
 #
 
+GAPPS_VARIANT := pico
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
@@ -74,5 +76,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     Lawnchair
 
+# Lineage hardware
+PRODUCT_PACKAGES += \
+    vendor.lineage.touch@1.0-service.nx549j
+
 # Inherit from msm8953-common
 $(call inherit-product, device/nubia/msm8953-common/msm8953.mk)
+
+# Inherit from opengapps
+$(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)
