@@ -74,9 +74,5 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     Lawnchair
 
-# Lineage Hardware
-PRODUCT_PACKAGES += \                                                                                                                                                                       │
-    vendor.lineage.touch@1.0-service.nx549j
-
 # Inherit from msm8953-common
 $(call inherit-product, device/nubia/msm8953-common/msm8953.mk)
